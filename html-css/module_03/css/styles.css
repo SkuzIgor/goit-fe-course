@@ -89,7 +89,7 @@ color: aqua;
   line-height: 14px;
   font-size: 14px;
   text-transform: uppercase;
-  color: grey;
+  color: #3b3b3b;
 }
 
 .header {
@@ -117,10 +117,12 @@ color: aqua;
   line-height: 24px;
 }
 .load-btn {
+  cursor: pointer;
   display: block;
   width: 164px;
   height: 60px;
-  border: 2px solid rgb(0, 0, 0);
+  color: #3b3b3b;
+  border: 2px solid rgb(61, 60, 60);
   border-radius: 2px;
   background-color: transparent;
   font-family: Playfair Display, serif;
