@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+header {
+  padding-top: 38px;
+}
+.navigation {
+  font-size: 23;
+  text-transform: uppercase;
+  margin-bottom: 108px;
+  font-weight: 700;
+}
+.logo {
+font-family: Roboto, sans-serif;
+font-size: 30px;
+line-height: 34px;
+font-weight: 500;
+text-transform: uppercase;
+float: left;
+color: black;
+letter-spacing: -0.02em;
+}
+.logo::first-letter {
+font-weight: 700;
+color: rgb(26, 188, 156);
+}
+.navigation__list {
+  float: right;
+  margin-top: 6px;
+}
+.navigation__list a:hover {
+  color: #03a9f4;
+}
+
+.navigation__list-item {
+  float: left;
+  font-size: 14px;
+}
+
+.navigation__list-item:not(:last-child) {
+  margin-right: 34px;
+}
+.navigation__list-link {
+  font-size: 14px;
+  font-family: "OpenSans", sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+.header__title {
+ font-family: "Roboto", sans-serif;
+ font-weight: 700;
+ font-size: 48px;
+ text-transform: uppercase;
+ color: rgb(81, 81, 81);
+ text-align: center;
+ margin-bottom: 96px;
+}
+.header__title::after {
+display: block;
+content: "";
+width: 164px;
+height: 7px;
+background-color:rgb(26, 188, 156);
+margin: 0 auto;
+margin-top: 24px;
+}
+
+.products-item {
+  float: left;
+  text-align: center;
+  text-transform: uppercase;
+  height: 322px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.list-item {
+  font-family: "Roboto", sans-serif;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 10px;
+  height: 40px;
+}
+.products a:focus {
+    background-color: rgb(26, 188, 156);
+   
+}
+
+.products-item:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+.list-item:first-child {
+  width: 201px;
+  float: left;
+}
+.list-item:last-child {
+  width: 55px;
+  float: right;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  background-color: rgba(255, 255, 255,0.5);
+  text-transform: uppercase;
+    
+}
+
+
+.about__description:last-child {
+  float: right;
+}
+
+
+.products-item a :focus {
+  font-size: 18px;
+  font-family: "Roboto" , sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+
+
+  
+  
+
+
+
+
