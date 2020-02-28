@@ -114,8 +114,10 @@ img {
 
 .slider__btn-wrapper {
   position: relative;
-  width: 100%;
   top: 226px;
+  width: 1110px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .slider__btn {
@@ -143,8 +145,8 @@ img {
 
 .subtitle {
   display: block;
-  font-family: "Roboto"serif;
-  font: weight 700;
+  font-family: "Roboto", serif;
+  font-weight: 700;
   font-size: 60px;
   color: white;
   text-transform: uppercase;
@@ -152,17 +154,18 @@ img {
 
 .text {
   display: block;
-  font-family: "Roboto"serif;
+  font-family: "Roboto", serif;
   font: weight 300;
   font-size: 24px;
   color: white;
   text-transform: uppercase;
+  
 }
 
 .frontpage {
-  width: 70%;
+  width: 760px;
   position: absolute;
-  top: 50%;
+  top: 42%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
