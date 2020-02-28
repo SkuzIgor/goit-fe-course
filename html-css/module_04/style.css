@@ -164,18 +164,24 @@ margin-top: 24px;
     display: block;
     font-size: 18px;
     font-family: "OpenSans", sans-serif;
+    line-height: 26px;
     font-weight: 600;
     color: rgb(85, 82, 82);
     margin-top: 14px;
+    margin-bottom: 14px;
+    letter-spacing: -0.02em;
   }
   
   .fullnews {
     display: inline-block;
-    font-size: 18px;
+    font-size: 14px;
     font-family: "OpenSans", sans-serif;
     color: rgb(85, 82, 82);
     width: 301px;
     height: auto;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: -0.02em;
   }
   .fullnews::before {
     display: block;
@@ -183,7 +189,7 @@ margin-top: 24px;
     width: 164px;
     height: 4px;
     background-color:rgb(26, 188, 156);
-    margin-top: 14px;
+    
     margin-bottom: 26px;
   }
   .news_item{
@@ -200,11 +206,24 @@ margin-top: 24px;
   height: 50px;
   font-size: 16px;
   font-family: "OpenSans", sans-serif;
-    background-color: rgb(78, 198, 171);
+  background-color: rgb(78, 198, 171);
   color: rgb(255, 255, 255);
   text-align: center;
   border-radius: 5px;
   margin-top: 16px;
   margin-bottom: 80px;
+  cursor: pointer;
 }
   
+.Nam_nec_tellus_a_odio_tincidunt_auc__Duis_sed_o {
+  font-size: 14px;
+  font-family: "OpenSans";
+  color: rgb(85, 82, 82);
+  line-height: 1.857;
+  position: absolute;
+  left: 261.937px;
+  top: 1648.25px;
+  width: 335px;
+  height: 66px;
+  z-index: 32;
+}
