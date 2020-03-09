@@ -333,6 +333,7 @@ img {
 }
 
 .footer {
+  width: 1200px;
   display: flex;
   justify-content: space-between;
   border-top: 1px solid rgb(231, 231, 231);
