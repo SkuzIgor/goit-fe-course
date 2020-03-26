@@ -62,11 +62,11 @@ img {
   text-align: center;
   vertical-align: middle
 }
+.navigation__list-link:hover {
+  border-color: #fff;
 
-.signup {
-  border: 2px solid white;
-  border-radius: 20px;
 }
+
 
 .navigation__list-link {
   display: block;
@@ -77,6 +77,9 @@ img {
   width: 94px;
   height: 40px;
   line-height: 36px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  
 }
 
 .logo {
