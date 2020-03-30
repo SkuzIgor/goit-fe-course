@@ -44,9 +44,7 @@ img {
 .mb-30 {
   margin-bottom: 30px;
 }
-.mb-20 {
-  margin-bottom: 20px;
-}
+
 .mb-60 {
   margin-bottom: 60px;
 }
@@ -79,13 +77,13 @@ img {
 }
 
 .header {
-  padding-top: 20px;
+  padding-top: 40px;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(../img/Vector_mb.png);
   background-color: black;
   background-size: cover;
-  padding-bottom: 120px;
+  padding-bottom: 234px;
 }
 
 .list-item {
@@ -129,23 +127,25 @@ img {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   margin: 0 auto;
-  margin-bottom: 18px;
+  margin-bottom: 32px;
 
+}
+.button {
+  display: block;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 14px;
+  line-height: 1.2;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin: 0 auto;
 }
 
 .header_title_btn {
-display: block;
+width: 226px;
 color: white;
-width: 280px;
-height: 40px;
-border-radius: 20px;
 background-color: rgb(255, 78, 80);
-font-size: 14px;
-line-height: 1.2;
-font-family: 'Montserrat', sans-serif;
-font-weight: 700;
 border: none;
-margin: 0 auto;
 }
 
 .partner_title {
@@ -155,7 +155,11 @@ margin: 0 auto;
   color: rgb(51, 51, 51);
   line-height: 1.2;
   text-align: center;
+  margin-bottom: 30px;
  
+}
+.list{
+  margin-bottom: 140px;
 }
 
 .img {
@@ -171,7 +175,7 @@ margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   margin-top: 18px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   text-align: center;
 }
 
@@ -219,40 +223,72 @@ margin: 0 auto;
 
 
 .partner_btn{
-  display: block;
+  width: 192px;
   color: rgb(255, 78, 80);
-  width: 280px;
-  height: 40px;
-  border-radius: 20px;
   background-color: rgb(255, 255, 255);
   border: 2px solid rgb(255, 78, 80);
   font-size: 14px;
-  line-height: 1.2;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  margin: 0 auto;
+}
+.partner {
+  margin-bottom: 30px;
 }
 
+
 /* MEDIA TABLET */
+
+
+@media (max-width: 767px){
+  .header {
+    padding-top: 18px;
+    padding-bottom: 138px;
+  }
+.header_title{
+  margin-bottom: 10px;
+ }
+
+  .header_subtitle{
+    margin-bottom: 8px;
+  }
+  .logo{
+    margin-bottom: 28px;
+  }
+
+  .list {
+    margin-bottom: 114px;
+  }
+  .button {
+   width: 280px;
+  }
+  .partner_title {
+    margin-bottom: 20px;
+  }
+  
+    
+  }
+
+  
+}
 
 @media (min-width: 768px) {
   
   .header {
     background-image: url(../img/Vector_tab.png);
-    }
+     }
   .header_title {
     font-size: 52px;
+    width: 500px;
   }
     
   .header_subtitle {
     width: 100%;
     font-size: 24px;
   }
+
 }
 
 
 
-/* MEDIA DESCTOP */
+/* MEDIA DESKTOP */
 
 @media (min-width: 992px) {
   .header {
