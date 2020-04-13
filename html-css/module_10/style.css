@@ -263,7 +263,7 @@ img {
 
 .services {
   padding-top: 44px;
-  padding-bottom: 76px;
+  /* padding-bottom: 76px; */
 }
 
 .section-subtitle {
@@ -378,7 +378,9 @@ img {
 
 /* ABOUT */
 
-
+.about {
+  padding-bottom: 76px;
+}
 .about__list {
   display: flex;
   justify-content: space-between;
