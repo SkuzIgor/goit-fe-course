@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MODULE_10</title>
 
-    <link href="../normalize.css">
+    <link rel="stylesheet" href="../normalize.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -47,62 +47,69 @@
                     </li>
                 </ul>
             </nav>
-            <p class="pre-header-title">Creative Template</p>
-            <h1 class="header-title">Welcome to MoGo</h1>
+            <p class="header__pre-title">Creative Template</p>
+            <h1 class="header__title">Welcome to MoGo</h1>
             <button class="header__btn">learn more</button>
         </div>
     </header>
+
+
+
     <main>
         <section class="services">
             <div class="container">
-                <p class="pre_section__title">We work with</p>
-                <h2 class="section__title">Amazing Services</h2>
+                <p class="section-subtitle">We work with</p>
+                <h2 class="section-title">Amazing Services</h2>
                 <ul class="services__list">
-                    <li class="services__list-item alarm">
-                        <div class="wrap">
+                    <li class="services__list-item services__list-item--alarm">
+                        <div class="services__list-item-wrapper">
                             <h3 class="services__list-item-title">Photography</h3>
                             <p class="services__list-item-description">Lorem ipsum dolor sit, amet consectetur
                                 adipisicing elit. Laborum, porro.</p>
                         </div>
                     </li>
                     <li class="services__list-item design">
-                        <div class="wrap">
+                        <div class="services__list-item-wrapper">
                             <h3 class="services__list-item-title">Web Design</h3>
                             <p class="services__list-item-description">Lorem ipsum dolor sit, amet consectetur
                                 adipisicing elit. Laborum, porro.</p>
                         </div>
                     </li>
                     <li class="services__list-item computer">
-                        <div class="wrap">
+                        <div class="services__list-item-wrapper">
                             <h3 class="services__list-item-title">Creativity</h3>
                             <p class="services__list-item-description">Lorem ipsum dolor sit, amet consectetur
                                 adipisicing elit. Laborum, porro.</p>
                         </div>
                     </li>
                     <li class="services__list-item book">
-                        <div class="wrap">
+                        <div class="services__list-item-wrapper">
                             <h3 class="services__list-item-title">Seo</h3>
                             <p class="services__list-item-description">Lorem ipsum dolor sit, amet consectetur
                                 adipisicing elit. Laborum, porro.</p>
                         </div>
                     </li>
                     <li class="services__list-item home">
-                        <div class="wrap">
+                        <div class="services__list-item-wrapper">
                             <h3 class="services__list-item-title">css/html</h3>
                             <p class="services__list-item-description">Lorem ipsum dolor sit, amet consectetur
                                 adipisicing elit. Laborum, porro.</p>
                         </div>
                     </li>
                     <li class="services__list-item image">
-                        <div class="wrap">
+                        <div class="services__list-item-wrapper">
                             <h3 class="services__list-item-title">digital</h3>
                             <p class="services__list-item-description">Lorem ipsum dolor sit, amet consectetur
                                 adipisicing elit. Laborum, porro.</p>
                         </div>
                     </li>
                 </ul>
-                <p class="pre_section__title">Who we are</p>
-                <h2 class="section__title">Meet our team</h2>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <p class="section-subtitle">Who we are</p>
+                <h2 class="section-title">Meet our team</h2>
                 <p class="subscribe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem maxime, rem vero
                     dolores rerum esse perspiciatis porro incidunt hic odio impedit soluta vel placeat neque. Sapiente
                     molestiae dicta facilis amet, mollitia nam veritatis optio ea ullam praesentium repellendus nihil
@@ -111,22 +118,38 @@
                 <ul class="about__list">
                     <li class="about__list-item">
                         <div class="about__list-img-wrapper">
-                            <img srcset="/img/team/man-1.jpg 380w, /img/team/man-1@2x.jpg 760w"
+                            <img srcset="./img/team/man-1.jpg 380w, ./img/team/man-1@2x.jpg 760w"
                                 src="./img/team/man-1.jpg" alt="man picture" sizes="380px" height="470"
                                 class="about__list-img">
                             <div class="overlay">
                                 <ul class="overlay__list">
                                     <li class="overlay__list-item">
-                                        <a href="#" class="overlay__list-link facebook"></a>
+                                        <a href="#" class="overlay__list-link ">
+                                            <svg class="overlay__list-link-svg">
+                                                <use href="./img/team/sprite.svg#facebook"></use>
+                                            </svg>
+                                        </a>
                                     </li>
                                     <li class="overlay__list-item">
-                                        <a href="#" class="overlay__list-link twitter"></a>
+                                        <a href="#" class="overlay__list-link">
+                                            <svg class="overlay__list-link-svg">
+                                                <use href="./img/team/sprite.svg#twiter"></use>
+                                            </svg>
+                                        </a>
                                     </li>
                                     <li class="overlay__list-item">
-                                        <a href="#" class="overlay__list-link photodairy"></a>
+                                        <a href="#" class="overlay__list-link">
+                                            <svg class="overlay__list-link-svg">
+                                                <use href="./img/team/sprite.svg#printerest"></use>
+                                            </svg>
+                                        </a>
                                     </li>
                                     <li class="overlay__list-item">
-                                        <a href="#" class="overlay__list-link instagram"></a>
+                                        <a href="#" class="overlay__list-link">
+                                            <svg class="overlay__list-link-svg">
+                                                <use href="./img/team/sprite.svg#instagram"></use>
+                                            </svg>
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -137,24 +160,38 @@
 
                     <li class="about__list-item">
                         <div class="about__list-img-wrapper">
-                            <img srcset="/img/team/man-2.jpg 380w, /img/team/man-2@2x.jpg 760w"
+                            <img srcset="./img/team/man-2.jpg 380w, ./img/team/man-2@2x.jpg 760w"
                                 src="./img/team/man-2.jpg" alt="man2 picture" sizes="380px" height="470"
                                 class="about__list-img">
                             <div class="overlay">
                                 <ul class="overlay__list">
                                     <li class="overlay__list-item">
-                                        <a href="#" class="overlay__list-link facebook">
-                                            
+                                        <a href="#" class="overlay__list-link ">
+                                            <svg class="overlay__list-link-svg">
+                                                <use href="./img/team/sprite.svg#facebook"></use>
+                                            </svg>
                                         </a>
                                     </li>
                                     <li class="overlay__list-item">
-                                        <a href="#" class="overlay__list-link twitter"></a>
+                                        <a href="#" class="overlay__list-link">
+                                            <svg class="overlay__list-link-svg">
+                                                <use href="./img/team/sprite.svg#twiter"></use>
+                                            </svg>
+                                        </a>
                                     </li>
                                     <li class="overlay__list-item">
-                                        <a href="#" class="overlay__list-link photodairy"></a>
+                                        <a href="#" class="overlay__list-link">
+                                            <svg class="overlay__list-link-svg">
+                                                <use href="./img/team/sprite.svg#printerest"></use>
+                                            </svg>
+                                        </a>
                                     </li>
                                     <li class="overlay__list-item">
-                                        <a href="#" class="overlay__list-link instagram"></a>
+                                        <a href="#" class="overlay__list-link">
+                                            <svg class="overlay__list-link-svg">
+                                                <use href="./img/team/sprite.svg#instagram"></use>
+                                            </svg>
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -162,28 +199,44 @@
                         <p class="about__list-name">Christopher Campbell</p>
                         <p class="about__list-position">Branding/UX design</p>
                     </li>
-                    
+
                     <li class="about__list-item">
                         <div class="about__list-img-wrapper">
-                            <img srcset="/img/team/man-3.jpg 380w, /img/team/man-3@2x.jpg 760w"
+                            <img srcset="./img/team/man-3.jpg 380w, ./img/team/man-3@2x.jpg 760w"
                                 src="./img/team/man-3.jpg" alt="man3 picture" sizes="380px" height="470"
                                 class="about__list-img">
-                            <div class="overlay">
-                                <ul class="overlay__list">
-                                    <li class="overlay__list-item">
-                                        <a href="#" class="overlay__list-link facebook"></a>
-                                    </li>
-                                    <li class="overlay__list-item">
-                                        <a href="#" class="overlay__list-link twitter"></a>
-                                    </li>
-                                    <li class="overlay__list-item">
-                                        <a href="#" class="overlay__list-link photodairy"></a>
-                                    </li>
-                                    <li class="overlay__list-item">
-                                        <a href="#" class="overlay__list-link instagram"></a>
-                                    </li>
-                                </ul>
-                            </div>
+                                <div class="overlay">
+                                    <ul class="overlay__list">
+                                        <li class="overlay__list-item">
+                                            <a href="#" class="overlay__list-link ">
+                                                <svg class="overlay__list-link-svg">
+                                                    <use href="./img/team/sprite.svg#facebook"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="overlay__list-item">
+                                            <a href="#" class="overlay__list-link">
+                                                <svg class="overlay__list-link-svg">
+                                                    <use href="./img/team/sprite.svg#twiter"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="overlay__list-item">
+                                            <a href="#" class="overlay__list-link">
+                                                <svg class="overlay__list-link-svg">
+                                                    <use href="./img/team/sprite.svg#printerest"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="overlay__list-item">
+                                            <a href="#" class="overlay__list-link">
+                                                <svg class="overlay__list-link-svg">
+                                                    <use href="./img/team/sprite.svg#instagram"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                         </div>
                         <p class="about__list-name">Michael Fertig </p>
                         <p class="about__list-position">Developer</p>
@@ -196,9 +249,11 @@
         <div class="footer">
             <p class="footer_text">© 2016 MoGo free PSD template by <a href="#">Laaqiq</a> </p>
             <form class="footer_form" action="#">
-                <input class="email" type="E-mail" value="Your e-mail">
-                <button class="footer__btn2">subscribe</button>
+                <input name= "email" type="email" class="email"  value="Your e-mail">
+                <button class="footer__btn">subscribe</button>
             </form>
         </div>
     </footer>
+</body>
+
 </html>
