@@ -1,0 +1,107 @@
+/* ABOUT */
+
+.subscribe {
+  font-size: 15px;
+  font-family: $secondary-font;
+  color: rgb(153, 153, 153);
+  line-height: 1.6;
+  text-align: center;
+  margin-top: 42px;
+}
+
+.about {
+  padding-bottom: 76px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 92px;
+    &-name {
+      font-size: 14px;
+      font-family: "Montserrat", sans-serif;
+      color: rgb(51, 51, 51);
+      font-weight: 400;
+      text-transform: uppercase;
+      line-height: 1.2;
+      text-align: center;
+      margin-top: 28px;
+    }
+    &-position {
+      font-size: 15px;
+      font-family: $secondary-font;
+      color: rgb(153, 153, 153);
+      font-style: italic;
+      line-height: 1.6;
+      text-align: center;
+      margin-top: 4px;
+    }
+    &-item {
+      text-align: center;
+      &:hover .overlay {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    &-img-wrapper {
+      position: relative;
+
+      &:hover {
+        transform: translate(-10px, -10px);
+        box-shadow: 10px 10px #95e1d3;
+        transition: all 0.2s linear;
+      }
+    }
+  }
+}
+
+.overlay {
+  display: flex;
+  background-image: linear-gradient(90deg, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  transition: all 0.2s linear;
+  &__list {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 207px;
+    display: flex;
+    &-link {
+      background-color: #fce38a;
+      display: block;
+      width: 56px;
+      height: 56px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-position: center;
+      background-repeat: no-repeat;
+      transition: all 0.2s linear;
+      &-svg {
+        fill: $main-color;
+        width: 26px;
+        height: 26px;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: all 0.2s linear;
+      }
+      &:hover {
+        .overlay__list-link-svg {
+          fill: white;
+        }
+        background-color: $main-color;
+        
+      }
+    }
+  }
+}
+
+.overlay * {
+  opacity: 1;
+  transition: all 0.2s linear;
+}

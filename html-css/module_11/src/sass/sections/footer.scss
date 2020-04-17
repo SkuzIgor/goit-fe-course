@@ -1,0 +1,55 @@
+/* FOOTER */
+
+.footer {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgb(231, 231, 231);
+  padding-top: 26px;
+  padding-bottom: 22px;
+  &__btn {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    background-color: #95e1d3;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+  }
+  &__text {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-family: $secondary-font;
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+  }
+  &__form {
+    display: flex;
+    &--email {
+      width: 230px;
+      font-size: 15px;
+      font-family: $secondary-font;
+      font-style: italic;
+      font-weight: 400;
+      color: rgb(204, 204, 204);
+      line-height: 1.6;
+      padding-left: 10px;
+    }
+  }
+}
+
+footer a {
+  font-size: 14px;
+  font-family: $secondary-font;
+  color: #f8b6b6;
+}
+

@@ -1,0 +1,106 @@
+/*SERVICES*/
+
+.section-title {
+  font-size: 30px;
+  font-family: "Montserrat";
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.section-title::after {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: rgb(243, 129, 129);
+  margin: 0 auto;
+  margin-top: 34px;
+}
+
+.section-subtitle {
+  font-size: 24px;
+  font-family: "Kaushan Script";
+  color: rgb(51, 51, 51);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.services {
+  padding-top: 44px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 65px;
+
+    &-item {
+      display: flex;
+      flex-wrap: wrap;
+      width: 383px;
+      text-align: left;
+      margin-bottom: 92px;
+
+      &-title {
+        font-size: 14px;
+        font-family: "Montserrat";
+        font-weight: 500;
+        color: rgb(51, 51, 51);
+        text-transform: uppercase;
+        line-height: 1.2;
+        margin-bottom: 10px;
+      }
+
+      &-description {
+        font-size: 15px;
+        font-family: $secondary-font;
+        color: rgb(153, 153, 153);
+        line-height: 1.6;
+      }
+
+      &-wrapper {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      &::before {
+        display: block;
+        content: "";
+        width: 32px;
+        height: 31px;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      &--alarm::before {
+        background-image: url(../images/services/alarm.svg);
+      }
+      &--design::before {
+        background-image: url(../images/services/line.svg);
+      }
+      &--computer::before {
+        background-image: url(../images/services/computer.svg);
+      }
+      &--book::before {
+        background-image: url(../images/services/book.svg);
+      }
+      &--home::before {
+        background-image: url(../images/services/home.svg);
+      }
+      &--image::before {
+        background-image: url(../images/services/image.svg);
+      }
+
+
+    }
+
+
+  }
+
+}
+
